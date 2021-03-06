@@ -1,0 +1,124 @@
+@media only screen and (min-width: 685px) and (max-width:1024px){
+    body{
+        background: #eaeaea;
+    }
+
+    .prijava{
+        background: #eaeaea;
+    }
+
+    #pozadina {
+        background: #eaeaea;
+    }
+
+    header{
+        height:225px;
+        width:100%;
+    }
+
+    nav > a{
+        display:block;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    nav > h2{
+        padding-top: 120px;
+        margin-right: 0px;
+        left:0;
+        position: absolute;
+    }
+
+    #slikaf1{
+        width:50px;
+        float:right;
+        margin-top: -5px;
+        margin-right: 10px;
+    }
+
+    #odjava{
+        float:left;
+        margin-top: -15px;
+    }
+
+    #meni,#meni2{
+        margin-left: 450px;
+    }
+
+    #meni3,#meni4,#meni5,#meni6,#meni7,#meni8{
+        margin-left: 400px;
+    }
+
+    body{
+        margin-top:200px;
+    }
+
+    header{
+        position: absolute;
+    }
+
+    footer{
+        position:relative;
+        bottom:-80px;
+        text-align: center;
+    }
+    
+    .naslovStranice{
+        padding-left: 5px;
+        margin-top: 50px;
+    }
+    
+    .naslovStraniceNavigacijski{
+        margin-top: 40px;
+        padding-left: 5px;
+    }
+
+    #slikap,#slikap2{
+        width:50px;
+    }
+
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid black; 
+    }
+
+    td { 
+        border: none;
+        border-bottom: 1px solid grey;
+        position: relative;
+        padding-left: 5px;
+        padding-top: 13%;
+        height: auto;
+        width: 320px;
+    }
+
+    td:before { 
+        position: absolute;
+        top: 6px;		
+        left: 6px;
+    }
+
+    td:nth-of-type(1):before { content: "Ime i prezime:"; }
+    td:nth-of-type(2):before { content: "Datum rođenja:"; }
+    td:nth-of-type(3):before { content: "Vrijeme rođenja:"; }
+    td:nth-of-type(4):before { content: "Email:"; }
+    td:nth-of-type(5):before { content: "URL adrese:"; }
+    td:nth-of-type(6):before { content: "Telefon:"; }
+    td:nth-of-type(7):before { content: "Odabrane utrke:"; }
+    td:nth-of-type(8):before { content: "Praćenje (utrke ili kvalifikacije):"; }
+    td:nth-of-type(9):before { content: "Razlozi za utrku:"; }
+    td:nth-of-type(10):before { content: "Najdraži vozač:"; }
+    td:nth-of-type(11):before { content: "Broj osvojenih prvenstava:"; }
+    td:nth-of-type(12):before { content: "Boja očiju:"; }
+    td:nth-of-type(13):before { content: "Slika vozača:"; }
+}
+

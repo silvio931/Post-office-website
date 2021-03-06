@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Silvio Mihalic">
+        <meta name="keywords" content="FOI, WebDiP, pošiljke, dokumentacija, pošta">
+        <meta name="description" content="Stranica dokumentacije, 16.6.2020.">
+        <link rel="stylesheet" href="../css/smihalic_index.css" type="text/css"/>
+        <link href="../css/smihalic_prilagodbe.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/smihalic_ispis.css" rel="stylesheet" type="text/css" media="print"/>
+
+
+    </head>
+    <body>
+        <header style="width: 100%;text-align: left">
+            <nav>
+                <a style="float:left;margin-left: 70px;margin-top:20px;font-family:Arial;text-decoration: none;color:#aeaeae;font-size: 15px;letter-spacing: -0.5px;" href = "../index.php">POVRATAK NA POČETNU STRANICU</a>
+
+            </nav>
+
+        </header>
+        <h2 style="color:black;font-family: arial;font-weight: bold;margin:70px">Dokumentacija</h2>
+
+        <div style="color:Black;margin:70px">
+            <h2 style="font-family: arial;font-weight: bold">Opis projektnog zadatka - Pošta</h2>
+            <div style="font-family: arial;font-size: 17px">Projektni zadatak "Pošta" bio je orijentiran na stvaranje web stranice koja omogućuje kreiranje i kontrolu
+                pošiljaka, računa i svih ostalih elemenata potrebnih kod slanja pošte. U projektnom postoje 4 tipa korisnika:
+                neregistrirani korisnik, registrirani, moderator/poštar te administrator. Svaki pojedini tip korisnika ima
+                vlastite funkcionalnosti. Neke od funkcionanosti su pregled poštanskih ureda i galeriju dostavljenih pošiljki
+                kod neregistriranog korisnika. Kreiranje pošiljki i plaćanje računa kod registriranog. Zaprimanje i usmjeravanje
+                pošiljki, izdavanje računa i pregled statistike kod moderatora, te kreiranje država, ureda i zaprimanje pošiljaka
+                kod administratora. Svaka sljedeća uloga također sadrži sve funkcionalnosti prethodne uloge. Također zahtjevi
+                projekta su omogućena registracija, prijava putem https-a, aktivacija računa e-mailom, dnevnik, pomak vremena
+                i nekolicina sličnih zahtjeva.
+            </div>
+        </div>
+
+        <div style="color:Black;margin:70px">
+            <h2 style="font-family: arial;font-weight: bold">Opis projektnog rješenja</h2>
+            <div style="font-family: arial;font-size: 17px">Projektno rješenje realizirano je kao web stranica koja omogućuje
+                registraciju i prijavu različitim korisnicima. Na temelju uloge koju prijavljeni korisnik ima
+                omogućen mu je pristup različitim dijelovima stranice. Projektno rješenje primijenjivo je kako 
+                kod poštanskih poduzeća unutar jedne države, tako i kod poštanskih poduzeća koja posluju diljem svijeta. 
+                U nastavku ukratko su opisane funkcionalnosti kod svake uloge korisnika.<br><br>
+                Neregistrirani korisnik - sa početne stranice omogućena mu je registracija i pregled poštanskih ureda
+                gdje odabirom ureda može vidjeti galeriju dostavljenih pošiljki, gdje vidi sliku pošiljke ukoliko
+                je primatelj pošiljke postavio sliku kao javnu.<br><br>
+                Registrirani korisnik - može sve što i prethodna uloga, također može se prijaviti, kreirati i 
+                poslati novu pošiljku, vidi popis svojih poslanih pošiljki, može ih ažurirati i obrisati ukoliko
+                još nisu poslane, vidi popis pošiljki u dolasku te vidi detalje pošiljke koja je spremna za isporuku, 
+                također može zatražiti izdavanje računa ukoliko je pošiljka spremna za isporuku, vidi popis svoji 
+                računa i može ih platiti uz prilaganje slike.<br><br>
+                Moderator/poštar - osim prethodnih mogućnosti, zadužen je za preusmjeravanje pošiljki prema sljedećem 
+                uredu, odnosno označiti pošiljku kao spremnu za isporuku ako je završni ured jednak njegovom i ako se pošiljka
+                nalazi u tom uredu, također vidi zahtjeve za izvadanjem računa i izdaje račune, može blokirati
+                korisnika ukoliko račun nije plaćen više od 7 dana, može vidjeti statistiku
+                plaćenih i neplaćenih pošiljku po državama unutar određenog vremenskog intervala.<br><br>
+                Administrator - može sve što i prethodne uloge, no on je još zadužen za prihvaćanje pošiljki
+                gdje unosi potrebne atribute za svaku pojedinu pošijku poput završnog ureda, cijene po kilogramu itd., 
+                može dodavati i ažurirati države, poštanske urede, ažurirati korisnike, pošiljke, račune, zahtjeve za izdavanjem računa.<br>
+
+            </div>
+        </div>
+
+        <div style="color:Black;font-family: arial;font-weight: bold;margin:70px">
+            <h2>ERA model</h2>
+            <div style="text-align: center">
+                <a href="../multimedija/era.png"><img src="../multimedija/era.png" alt="era" style="width:1100px;"/></a>
+            </div>
+        </div>
+
+        <div style="color:Black;font-family: arial;font-weight: bold;margin:70px">
+            <h2>Navigacijski dijagram</h2>
+            <div style="text-align: center">
+                <a href="../multimedija/navigacijski.PNG"><img src="../multimedija/navigacijski.PNG" alt="era" style="width:1100px;"/></a>
+            </div>
+        </div>
+
+        <style>
+            table.tablica1{
+                border: 2px;
+                border-color: black;
+                border-style: solid;
+            }
+
+            table, td, th{
+                border: 1px solid black;
+            }
+
+            #zaglavljetablice
+            {
+                background-color: #eaeaea;
+                color: black;
+                font-size: larger;
+                text-align: center;
+            }
+        </style>
+        <div style="font-size:18px;font-family: arial;color:black;margin:70px;text-align: center;">
+            <table id="tablica1" style="font-weight: bold;">
+                <caption style="font-size: 20px">Popis i opis skripata:</caption>
+                <thead>
+                    <tr id="zaglavljetablice">
+                        <th>Naziv skripte</th>
+                        <th>Opis skripte</th>
+                    </tr>
+                </thead>
+                <tbody style="font-weight: normal">
+                    <tr>
+                        <td>
+                            index.php 
+                        </td>
+                        <td>
+                            Početna stranica koja se otvara prilikom dolaska na web aplikaciju, 
+                            sadrži sliku za naslovnicu i poveznice na sve ostale stranice u meniju i ispod 
+                            naslovne slike, sadrži poveznice na stranice o_autoru, dokumentaciju i korisnici
+                            koja je zaštićena htaccess datotekom
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            meni.php 
+                        </td>
+                        <td>
+                            Skripta koja prikazuje navigacijski meni na svakoj stranici na temelju uloge
+                            koju ima prijavljeni korisnik, također prikazuje gumb za prijavu ili odjavu
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            admin.php 
+                        </td>
+                        <td>
+                            Jednostavna stranica koja sadrži poveznice na ostale stranice kojima može
+                            pristupati samo administrator
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            blokiranje_otkljucavanje_racuna.php 
+                        </td>
+                        <td>
+                            Stranica na kojoj se nalazi popis svih korisničkih računa koji su registrirani te prikazuje
+                            sve atribute za pojedinog korisnika, skripti pristupa samo administrator, može 
+                            blokirati i otključati određeni račun, ažurirati podatke ili obrisati račun
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            drzave.php 
+                        </td>
+                        <td>
+                            Prikazuje popis država, može joj pristupiti samo administrator i može dodavati,
+                            ažurirati postojeće i brisati države
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            izdani_racuni.php 
+                        </td>
+                        <td>
+                            Prikazuje popis izdanih računa, može joj pristupiti samo administrator i može dodavati,
+                            ažurirati postojeće i brisati račune
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            moderator.php 
+                        </td>
+                        <td>
+                            Jednostavna stranica koja sadrži poveznice na ostale stranice kojima može
+                            pristupati samo moderator
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            posiljke.php 
+                        </td>
+                        <td>
+                            Stranica na kojoj registrirani korisnici mogu dodati nove pošiljke, sadrži
+                            poveznice na pošiljke u dolasku, pošiljke u odlasku i račune prijavljenog korisnika
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            posiljke_admin.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa samo admin gdje vidi popis svih pošiljki i atributa, koje može mijenjati
+                            ili brisati pošiljku
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            posiljke_u_dolasku.php 
+                        </td>
+                        <td>
+                            Stranica na kojoj registrirani korisnici mogu vidjeti pošiljke u dolasku, gdje se nalaze,
+                            kakav je status pošiljke, kada su dostavljene mogu vidjeti detalje, te zatražiti izdavanje računa
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            poslane_posiljke.php 
+                        </td>
+                        <td>
+                            Stranica na kojoj registrirani korisnici mogu vidjeti poslane pošiljke, pošiljke koje
+                            još nisu poslane prema sljedećem uredu se mogu brisati i ažurirati
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            postanski_uredi.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa samo admin gdje vidi popis poštanskih ureda, može dodavati nove urede,
+                            ažurirati postojeće ili brisati postojeće urede
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            prihvacanje_posiljki.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa samo admin gdje vidi kreirane pošiljke koje još nisu odobrene te ih 
+                            on odobrava unošenjem cijene po kilogramu, početnog, sljedećeg i završnog ureda
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            racuni_admin.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa samo admin gdje vidi popis svih računa i može
+                            ažurirati postojeće ili brisati postojeće račune
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            statistika.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa moderator gdje može vidjeti sve, ili može
+                            odabrati datume između kojih može vidjeti broj plaćenih i neplaćenih računa po državi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            uredi.php 
+                        </td>
+                        <td>
+                            Stranica koja je dostupna svima, na njoj se nalazi popis svih poštanskih ureda s nekoliko
+                            atributa, moguće pretraživanje i sortiranje ureda, odabirom ureda prikazuju
+                            se dostavljene pošiljke tog ureda sa slikama dostavljenih paketa ukoliko su slike javne
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            zahtjevi.php 
+                        </td>
+                        <td>
+                            Stranica na kojoj moderator vidi popis zahtjeva za izdavanjem računa te može izdati račun
+                            unošenjem potrebnim informacija
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            zahtjevi_admin.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa samo admin gdje vidi popis svih zahtjeva za izdavanjem računa i može
+                            ažurirati postojeće ili brisati postojeće zahtjeve
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            zaprimanje_posiljki.php 
+                        </td>
+                        <td>
+                            Stranica kojoj pristupa moderator gdje vidi popis pošiljki čiji je sljedeći ured njegov ured,
+                            tim pošiljkama zadaje sljedeći odredišni ured čime ih preusmjerava i šalje drugom moderatoru,
+                            ukoliko je sljedeći ured jednak završnom pošiljku samo označava kao spremnu za isporuku
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="color:Black;margin:70px">
+            <h2 style="font-family: arial;font-weight: bold">Korištene tehnologije i alati</h2>
+            <div style="font-family: arial;font-size: 17px">
+                Korištene tehnologije: HTML, CSS, jQuery, PHP, MySQL<br>
+                Korišteni alati: Apache NetBeans IDE 11.2, MySQL Workbench
+            </div>
+        </div>
+
+        <div style="font-size:18px;font-family: arial;color:black;margin:70px;position:relative;text-align: center;">
+            <table id="tablica1" style="font-weight: bold;">
+                <caption style="font-size: 20px;">Popis i opis vanjskih biblioteka:</caption>
+                <thead>
+                    <tr id="zaglavljetablice">
+                        <th>Naziv skripte</th>
+                        <th>Opis skripte</th>
+                    </tr>
+                </thead>
+                <tbody style="font-weight: normal">
+                    <tr>
+                        <td>
+                            jQuery
+                        </td>
+                        <td>
+                            Koristi se za realizaciju JavaScript funkcionalnosti
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            DataTables
+                        </td>
+                        <td>
+                            Koristi se za straničenje, pretraživanje i sortiranje tabličnih prikaza.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            baza.class.php
+                        </td>
+                        <td>
+                            Koristi se za pristpu bazi podataka te izvršavanje upita
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            sesija.class.php
+                        </td>
+                        <td>
+                            Koristi se za realizaciju prijave u web aplikaciju kreiranjem sesije korisnika
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="spojiPodnozje" style="height:80px">
+            <address>Kontakt: <a style="color:#3366ff" href="mailto:smihalic@foi.hr">Silvio Mihalic</a></address>
+            <p><small>&copy; 2020 S. Mihalic</small></p>
+        </footer>
+    </body>
+</html>

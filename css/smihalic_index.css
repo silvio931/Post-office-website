@@ -1,0 +1,548 @@
+
+            .resetka{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                max-width: 100%;
+            }
+
+            .spojiZaglavlje{
+                grid-column: 1 / span 3;
+                grid-row: 1;
+                text-align: right;
+            }
+
+            .zaSliku{
+                grid-column: 1 / span 3;
+                grid-row: 1;
+            }
+
+            .spojiPodnozje{
+                grid-column: 1 / span 3;
+                grid-row: 9;
+            }
+
+            .autorNaslov{
+                grid-column:1;
+                grid-row:2;
+                padding-left:200px;
+                background-color: #eaeaea;
+                color:black;
+                margin-left: 0px;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+                height:350px;
+            }
+
+            .autorTekst{
+                grid-row:2;
+                grid-column:2;
+                background-color: #eaeaea;
+                color:black;
+                font-family: Courier New;
+                padding-top: 100px;
+            }
+
+            .autorSlika{
+                grid-row:2;
+                grid-column:3;
+                background-color: #eaeaea;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            .clanak1Naslov{
+                grid-column:1;
+                grid-row:3;
+                padding-left:200px;
+                background-color: white;
+                color:black;
+                margin-left: 0px;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+                height:350px;
+            }
+
+            .clanak1Tekst{
+                grid-row:3;
+                grid-column:2;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                color:black;
+                font-family: Courier New;
+            }
+
+
+            .clanak1Slika{
+                grid-row:3;
+                grid-column:3;
+                background-color: white;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            .clanak2Naslov{
+                grid-column:1;
+                grid-row:4;
+                padding-left:200px;
+                background-color: #eaeaea;
+                color:black;
+                margin-left: 0px;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+                height:350px;
+            }
+
+            .clanak2Tekst{
+                grid-row:4;
+                grid-column:2;
+                background-color: #eaeaea;
+                display: flex;
+                align-items: center;
+                color:black;
+                font-family: Courier New;
+            }
+
+            .clanak2Slika{
+                grid-row:4;
+                grid-column:3;
+                background-color: #eaeaea;
+                margin-top:0px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            .slike{
+                margin: 25px;
+                height: 250px;
+            }
+
+            .slike > img{
+                height: 200px;
+                padding-left:50px;
+            }
+
+            body{
+                background-color: white;
+                color: white;
+                font-family: fantasy;
+                width: 100%;  
+                margin-left:0px; 
+                margin-bottom: 0px;
+                margin-top:60px;
+            }
+
+            footer{
+                text-align: center;
+                font-size: 20px;
+                width: 100%;
+                background-color: black;
+                color: white;
+                font-family: Arial;
+                left: 0;
+                right: 0;
+                position: relative;
+            }
+
+            .tekst{
+                font-size: 20px;
+                word-spacing: 0.1em;
+                line-height: 100%;
+                font-family: sans-serif;
+                font-weight: bold;
+                padding-left: 180px;
+            }
+
+            p.tekst:hover{
+                font-size:25px;
+            }
+
+            .tekst2{
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+
+            #sadrzaj{
+                background-color: #eaeaea;
+                color: black;
+                padding-left: 200px;
+                height: 270px;
+            }
+
+            a.veza:link {
+                color: grey;
+            }
+
+            a.veza:visited {
+                color: grey;
+            }
+
+            a.veza:hover {
+                color: white;
+            }
+
+            .veza{
+                padding-left: 10px;
+                text-decoration: none; 
+                font-family: Arial;
+                position: relative;
+                top: 20px;
+                right: 183px;
+                font-size: 15px;
+                letter-spacing: -0.5px;
+            }
+
+            #naslovStranice{
+                float: left; 
+                padding-left: 40px; 
+                color:#eaeaea; 
+                font-family: sans-serif;
+            }
+
+            .naslov{
+                position: absolute;
+                top: 25%;
+                padding-left:130px;
+                font-size:60px;
+                font-family: Courier New;
+            }
+
+            #ispodnaslova{
+                position: absolute;
+                top: 35%;
+                padding-left:130px;
+                font-size:35px;
+                font-family: Courier New;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                background-color: black; 
+                height: 60px;
+                z-index: 999;
+            }
+
+            #slika{
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            #clanak{
+                font-size:20px;
+                font-family: Courier New;
+            }
+
+            #clanak1{
+                font-size:20px;
+                font-family: Courier New;
+            }
+
+            #clanak2{
+                font-size:20px;
+                font-family: Courier New;
+            }
+
+            .trazilica {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: -5px;
+                margin-right: 6px;
+                font-size: 14px;
+                width: 100px;
+            }
+
+            p.povecanjeSlova:hover {
+                font-size: 25px;
+            }
+
+            .slikaTrazi1{
+                width:1.4%; padding-right: 10px;
+            }
+
+            #slika1{
+                grid-row: 5;
+                grid-column: 1;
+            }
+
+            #meniHeader{
+                display: none;
+            }
+            .logo{
+                width:5%;float:left;padding-top:10px;
+            }
+
+            #slikaPrilagodba{
+                display:none;
+            }
+
+            
+            @media only screen and (min-width: 685px) and (max-width:1024px){
+                header{
+                    position: absolute;
+                }
+
+                nav > a{
+                    display:block;
+                    padding-top: 5px;
+                    text-align: center;
+
+                }
+                nav > h2{
+                    padding-top: 120px;
+                    margin-right: 0px;
+                    left:0;
+                    position: absolute;
+                }
+
+                #slikaf1{
+                    width:50px;
+                    float:right;
+                    margin-top: -5px;
+                    margin-right: 10px;
+                }
+
+                #odjava{
+                    float:left;
+                    margin-top: -15px;
+                }
+
+                body{
+                    margin-top:200px;
+                }
+
+                footer{
+                    position:relative;
+                    bottom:-80px;
+                    text-align: center;
+                }
+
+                .resetka{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    max-width: 100%;
+                }
+
+                .spojiZaglavlje{
+                    grid-column: 1 / span 2;
+                    grid-row: 1;
+                    height: 220px;
+                }
+
+                .zaSliku{
+                    grid-column: 1 / span 2;
+                    grid-row: 2;
+                    margin-top: 50px;
+                }
+
+                .naslov{
+                    padding-top: 140px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                .spojiPodnozje{
+                    grid-column: 1 / span 2;
+                    grid-row: 18;
+                }
+
+                .autorNaslov{
+                    grid-column:1;
+                    grid-row:3;
+                    z-index: 999;
+                    background-color: #eaeaea;
+                    color:black;
+                    height: 120px;
+                    text-align: left;
+                }
+
+                .autorTekst{
+                    grid-row:4;
+                    grid-column:1 ;
+                    background-color: #eaeaea;
+                    color:black;font-family: Courier New;
+                    padding-left: 200px;
+                    margin-top: -100px;
+                }
+
+                .autorSlika{
+                    grid-row:3 / span 2;
+                    grid-column:2;
+                    background-color: #eaeaea;
+                    margin-top:0px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .clanak1Naslov{
+                    grid-column:1;
+                    grid-row:5;
+                    padding-left:200px;
+                    background-color: white;
+                    color:black;
+                    height: 120px;
+                    text-align: left;
+                }
+
+                .clanak1Tekst{
+                    grid-row:6;
+                    grid-column:1 ;
+                    background-color: white;
+                    color:black;font-family: Courier New;
+                    text-align: left;
+                    padding-left: 200px;
+                    padding-bottom: 100px;
+                }
+
+                .clanak1Slika{
+                    grid-row:5 / span 2;
+                    grid-column:2;
+                    background-color: white;
+                    margin-top:0px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .clanak2Naslov{
+                    grid-column:1;
+                    grid-row:7;
+                    padding-left:200px;
+                    background-color: #eaeaea;
+                    color:black;
+                    height: 120px;
+                    text-align: left;
+                }
+
+                .clanak2Tekst{
+                    grid-row:8;
+                    grid-column:1;
+                    background-color: #eaeaea;
+                    color:black;font-family: Courier New;
+                    text-align: left;
+                    padding-left: 200px;
+                    padding-bottom: 100px;
+                }
+
+
+                .clanak2Slika{
+                    grid-row:7 /span 2;
+                    grid-column:2;
+                    background-color: #eaeaea;
+                    margin-top:0px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                #slika1{
+                    grid-column: 1;
+                    grid-row: 12;
+                }
+
+                #slika2{
+                    grid-column: 2;
+                    grid-row: 12;
+                }
+                #slika3{
+                    grid-column: 1;
+                    grid-row: 13;
+                }
+                #slika4{
+                    grid-column: 2;
+                    grid-row: 13;
+                }
+                #slika5{
+                    grid-column: 1;
+                    grid-row: 14;
+                }
+                #slika6{
+                    grid-column: 2;
+                    grid-row: 14;
+                }
+                #slika7{
+                    grid-column: 1;
+                    grid-row: 15;
+                }
+                #slika8{
+                    grid-column: 2;
+                    grid-row: 15;
+                }
+                #slika9{
+                    grid-column: 1;
+                    grid-row: 16;
+                }
+                #slika10{
+                    grid-column: 2;
+                    grid-row: 16;
+                }
+                #slika11{
+                    grid-column: 1;
+                    grid-row: 17;
+                }
+                #slika12{
+                    grid-column: 2;
+                    grid-row: 17;
+                }
+
+                #meniPrilagodba{
+                    display: none;
+
+                }
+                #meniHeader{
+                    display: initial;
+                    margin-right: 180px;
+                    margin-top: 40px;
+                }
+
+                #naslovStranice{
+                    padding-top: 0px;
+                    padding-left: 0px;
+                }
+                .logo{
+                    width: 70px;
+                    padding-top: 10px;
+                }
+
+                .logoklik{
+                    height: 40px;
+                }
+
+                .slikaTrazi1{
+                    width: 25px;
+                }
+
+                #slikaNaslovna{
+                    display: none;
+                }
+
+                #slikaPrilagodba{
+                    display: initial;
+                    height: 500px;
+                }
+
+                #ispodnaslova{
+                    display: none;
+                }
+
+            }
